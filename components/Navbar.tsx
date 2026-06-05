@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import BrandMark from './BrandMark'
+import ReservationModal from './ReservationModal'
 
 const NAV_LINKS = [
   { label: 'Home',  href: '/'      },
@@ -14,6 +15,7 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -74,8 +76,8 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link
-            href="/"
+          <button
+            onClick={() => setModalOpen(true)}
             className="
               inline-flex items-center justify-center
               rounded-pill bg-terracotta-300 text-cream-50
@@ -85,10 +87,11 @@ export default function Navbar() {
               hover:bg-terracotta-200 hover:-translate-y-0.5
               focus-visible:outline-none focus-visible:ring-2
               focus-visible:ring-terracotta-300 focus-visible:ring-offset-2
+              cursor-pointer
             "
           >
             Reserve a Table
-          </Link>
+          </button>
         </div>
 
         {/* Mobile hamburger */}
@@ -103,6 +106,8 @@ export default function Navbar() {
           <span className={`block w-6 h-0.5 bg-espresso-400 transition-transform duration-[250ms] ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`} />
         </button>
       </div>
+
+      <ReservationModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
       {/* Mobile menu */}
       {menuOpen && (
@@ -120,19 +125,19 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link
-                href="/"
+              <button
                 className="
                   inline-flex items-center justify-center w-full
                   rounded-pill bg-terracotta-300 text-cream-50
                   px-5 py-3 font-sans text-sm font-semibold
                   transition-all duration-[250ms]
                   hover:bg-terracotta-200
+                  cursor-pointer
                 "
-                onClick={() => setMenuOpen(false)}
+                onClick={() => { setMenuOpen(false); setModalOpen(true) }}
               >
                 Reserve a Table
-              </Link>
+              </button>
             </li>
           </ul>
         </div>

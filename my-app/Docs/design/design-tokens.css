@@ -1,0 +1,220 @@
+/*
+ * Brew & Co — Design Tokens
+ * Tailwind CSS v4 @theme syntax
+ * Drop this file in app/globals.css via @import, or merge directly.
+ *
+ * Usage in Tailwind classes:
+ *   bg-cream-100   text-espresso-400   border-terracotta-300
+ *   shadow-warm-lg  rounded-pill        font-display
+ */
+
+@theme {
+
+  /* ─────────────────────────────────────────────
+   * COLORS
+   * ───────────────────────────────────────────── */
+
+  /* Cream — primary background family */
+  --color-cream-50:  #FDFAF6;
+  --color-cream-100: #F5EDE0;   /* hero / page background */
+  --color-cream-200: #EDE0CC;   /* subtle section bg, dividers */
+  --color-cream-300: #E0CCAF;   /* borders, disabled states */
+  --color-cream-400: #C8AA88;   /* placeholder text */
+
+  /* Espresso — primary text & dark surfaces */
+  --color-espresso-50:  #7A5A3E;   /* tertiary text */
+  --color-espresso-100: #5A3C24;   /* secondary text */
+  --color-espresso-200: #3D2414;   /* muted headings */
+  --color-espresso-300: #2D1A0E;   /* primary body text */
+  --color-espresso-400: #1E1008;   /* darkest — buttons, hero text */
+  --color-espresso-500: #100804;   /* outer shell bg */
+
+  /* Terracotta — primary brand accent (CTAs, prices, highlights) */
+  --color-terracotta-100: #F2B08A;
+  --color-terracotta-200: #E07A4A;   /* hover */
+  --color-terracotta-300: #C75B2A;   /* base brand accent */
+  --color-terracotta-400: #A84820;   /* pressed / active */
+  --color-terracotta-500: #8A3818;   /* deep emphasis */
+
+  /* Gold — secondary accent (product highlights, featured items) */
+  --color-gold-100: #F2CA6A;
+  --color-gold-200: #E0A830;   /* hover */
+  --color-gold-300: #C89028;   /* base gold */
+  --color-gold-400: #A87820;   /* deep gold */
+
+  /* Category palette — icon circle backgrounds */
+  --color-olive-300: #94A030;
+  --color-olive-400: #7A8A28;   /* Coffee */
+  --color-olive-500: #5E6E1E;
+
+  --color-teal-300:  #2A9A78;
+  --color-teal-400:  #1A7A60;   /* Drinks */
+  --color-teal-500:  #126050;
+
+  --color-rose-300:  #D86A80;
+  --color-rose-400:  #C04E68;   /* Tea */
+  --color-rose-500:  #9E3A52;
+
+  --color-berry-300: #B85070;
+  --color-berry-400: #9A3050;   /* Bakery */
+  --color-berry-500: #7A2040;
+
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+
+  /* ─────────────────────────────────────────────
+   * TYPOGRAPHY
+   * ───────────────────────────────────────────── */
+
+  /*
+   * Display  →  Fraunces (warm optical-size variable serif)
+   *             Add to layout.tsx: import { Fraunces } from 'next/font/google'
+   *             variable: '--font-fraunces', subsets: ['latin']
+   *
+   * Sans     →  Geist Sans (already loaded in layout.tsx)
+   * Mono     →  Geist Mono (already loaded in layout.tsx)
+   */
+  --font-display: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --font-sans:    var(--font-geist-sans), 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:    var(--font-geist-mono), 'Courier New', monospace;
+
+  /* Font sizes — named for semantic role */
+  --text-hero:    clamp(2.5rem, 5vw, 4rem);     /* 40–64px hero headline */
+  --text-display: clamp(2rem,   4vw, 3rem);     /* 32–48px section title */
+  --text-heading: clamp(1.5rem, 2.5vw, 2rem);  /* 24–32px card/modal heading */
+  --text-subhead: 1.125rem;                     /* 18px subheadings */
+  --text-body:    1rem;                         /* 16px body copy */
+  --text-small:   0.875rem;                     /* 14px captions, labels */
+  --text-xs:      0.75rem;                      /* 12px badges, micro-copy */
+
+  /* Line heights */
+  --leading-tight:  1.1;
+  --leading-snug:   1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.75;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.05em;
+  --tracking-widest:  0.15em;
+
+  /* Font weights */
+  --font-regular:  400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
+  --font-black:    900;
+
+
+  /* ─────────────────────────────────────────────
+   * SPACING
+   * ───────────────────────────────────────────── */
+
+  /* Extends Tailwind's default 4px-base scale with semantic names */
+  --spacing-18: 4.5rem;    /* 72px */
+  --spacing-22: 5.5rem;    /* 88px */
+  --spacing-26: 6.5rem;    /* 104px */
+  --spacing-30: 7.5rem;    /* 120px */
+  --spacing-34: 8.5rem;    /* 136px */
+
+  /* Semantic layout spacing */
+  --space-section-y:   clamp(3rem, 6vw, 6rem);    /* vertical section padding */
+  --space-container-x: clamp(1.5rem, 5vw, 5rem);  /* horizontal page margin */
+  --space-card-inner:  1.5rem;                     /* card internal padding */
+  --space-nav-h:       4.5rem;                     /* navbar height */
+
+
+  /* ─────────────────────────────────────────────
+   * BORDER RADIUS
+   * ───────────────────────────────────────────── */
+
+  --radius-xs:   0.25rem;    /* 4px  — form elements, tags */
+  --radius-sm:   0.5rem;     /* 8px  — small cards, tooltips */
+  --radius-md:   0.75rem;    /* 12px — standard cards */
+  --radius-lg:   1rem;       /* 16px — large cards, modals */
+  --radius-xl:   1.5rem;     /* 24px — hero card, featured panels */
+  --radius-2xl:  2rem;       /* 32px — page wrapper, drawers */
+  --radius-pill: 9999px;     /* pill buttons, tags, search bar */
+  --radius-circle: 50%;      /* category icons, avatars */
+
+
+  /* ─────────────────────────────────────────────
+   * SHADOWS — warm espresso-tinted
+   * ───────────────────────────────────────────── */
+
+  --shadow-warm-xs: 0 1px 2px 0 rgba(30, 16, 8, 0.08);
+  --shadow-warm-sm: 0 1px 3px 0 rgba(30, 16, 8, 0.12),
+                    0 1px 2px -1px rgba(30, 16, 8, 0.08);
+  --shadow-warm-md: 0 4px 6px -1px rgba(30, 16, 8, 0.14),
+                    0 2px 4px -2px rgba(30, 16, 8, 0.08);
+  --shadow-warm-lg: 0 10px 15px -3px rgba(30, 16, 8, 0.16),
+                    0 4px 6px -4px rgba(30, 16, 8, 0.08);
+  --shadow-warm-xl: 0 20px 25px -5px rgba(30, 16, 8, 0.20),
+                    0 8px 10px -6px rgba(30, 16, 8, 0.10);
+  --shadow-warm-2xl:0 25px 50px -12px rgba(30, 16, 8, 0.30);
+
+  /* Brand-colored glow shadows */
+  --shadow-terracotta: 0 4px 14px 0 rgba(199, 91, 42, 0.40);
+  --shadow-gold:       0 4px 14px 0 rgba(200, 144, 40, 0.40);
+  --shadow-espresso:   0 8px 24px 0 rgba(30, 16, 8, 0.35);
+
+  /* Inset shadow for pressed states */
+  --shadow-inset-warm: inset 0 2px 4px 0 rgba(30, 16, 8, 0.10);
+
+
+  /* ─────────────────────────────────────────────
+   * ANIMATION & EASING
+   * ───────────────────────────────────────────── */
+
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);   /* playful overshoot */
+  --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);        /* material standard */
+  --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-expo:cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-spring:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+  --duration-slower: 600ms;
+  --duration-reveal: 800ms;
+
+
+  /* ─────────────────────────────────────────────
+   * Z-INDEX SCALE
+   * ───────────────────────────────────────────── */
+
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+
+
+  /* ─────────────────────────────────────────────
+   * BORDER WIDTHS
+   * ───────────────────────────────────────────── */
+
+  --border-thin:   1px;
+  --border-base:   1.5px;
+  --border-thick:  2px;
+  --border-heavy:  3px;
+
+
+  /* ─────────────────────────────────────────────
+   * BREAKPOINTS (mirrors Tailwind defaults)
+   * ───────────────────────────────────────────── */
+
+  --breakpoint-sm:  640px;
+  --breakpoint-md:  768px;
+  --breakpoint-lg:  1024px;
+  --breakpoint-xl:  1280px;
+  --breakpoint-2xl: 1536px;
+
+}

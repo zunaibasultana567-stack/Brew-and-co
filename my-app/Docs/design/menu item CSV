@@ -1,0 +1,50 @@
+category,name,description,price,badge
+Espresso Drinks,Espresso,"A single concentrated shot of rich espresso with a golden crema. Pure and bold.",$3.50,
+Espresso Drinks,Double Espresso,"Two shots of our signature espresso blend for a deeper, more intense hit.",$4.50,
+Espresso Drinks,Americano,"Espresso shots pulled long with hot water. Strong character, smooth finish.",$4.00,
+Espresso Drinks,Cappuccino,"Equal parts espresso, steamed milk, and velvety foam. A timeless classic.",$5.00,Popular
+Espresso Drinks,Flat White,"Silky micro-foamed milk over a double ristretto shot. Velvety, bold, and balanced.",$5.50,House Favourite
+Espresso Drinks,Latte,"A gentle espresso base cloaked in smooth steamed milk. Creamy and comforting.",$5.50,
+Espresso Drinks,Caramel Latte,"Our classic latte finished with housemade salted caramel drizzle. Sweet meets smoky.",$6.50,Popular
+Espresso Drinks,Hazelnut Mocha,"Espresso blended with dark chocolate and roasted hazelnut syrup. Rich and indulgent.",$6.50,
+Espresso Drinks,Cortado,"Equal parts espresso and warm milk, served short. Bold intensity in a small glass.",$5.00,
+Espresso Drinks,Macchiato,"A shot of espresso gently marked with a dollop of silky foam. Sharp and elegant.",$4.50,
+Espresso Drinks,Espresso Con Panna,"A shot of espresso crowned with a swirl of freshly whipped cream.",$4.50,
+Espresso Drinks,Dirty Chai Latte,"Spiced masala chai spiked with a double espresso shot. Warming and complex.",$6.50,House Favourite
+Cold Drinks,Iced Latte,"Double espresso chilled over ice and finished with cold milk. Refreshingly smooth.",$6.00,
+Cold Drinks,Cold Brew,"Steeped for 18 hours in cold water for a naturally sweet, mellow coffee concentrate.",$5.50,Popular
+Cold Drinks,Nitro Cold Brew,"Cold brew infused with nitrogen for a creamy, velvety texture straight from the tap.",$6.50,House Favourite
+Cold Drinks,Iced Cappuccino,"Espresso shaken with ice and topped with cold foam. Light, frothy, and cooling.",$6.00,
+Cold Drinks,Iced Caramel Macchiato,"Vanilla milk and espresso poured over ice with a caramel drizzle. Sweet and layered.",$7.00,Popular
+Cold Drinks,Caramel Frappuccino,"Blended espresso with caramel sauce, ice, and whipped cream. Irresistibly sweet.",$7.50,Popular
+Cold Drinks,Nutella Mudslide,"Rich Nutella blended with milk and ice cream, topped with chocolate drizzle.",$8.00,House Favourite
+Cold Drinks,Chocolate Shake,"Thick and creamy blended shake made with Belgian dark chocolate and cold milk.",$7.50,
+Cold Drinks,Vanilla Bean Frappe,"Smooth vanilla bean blended with ice and milk, topped with whipped cream.",$7.00,
+Cold Drinks,Iced Matcha Latte,"Ceremonial-grade matcha whisked with oat milk and poured over ice. Earthy and fresh.",$6.50,House Favourite
+Cold Drinks,Strawberry Lemonade,"Fresh-squeezed lemonade blended with ripe strawberry puree. Bright and tangy.",$5.50,
+Hot Drinks,Hot Chocolate,"Single-origin dark chocolate melted into steamed milk. Rich, velvety, and warming.",$5.50,Popular
+Hot Drinks,Matcha Latte,"Stone-ground ceremonial matcha whisked with steamed oat milk. Earthy and smooth.",$6.00,House Favourite
+Hot Drinks,Chai Latte,"A blend of cinnamon, cardamom, ginger, and clove steeped in steamed milk.",$5.50,Popular
+Hot Drinks,London Fog,"Earl Grey tea with lavender-vanilla syrup and steamed milk. Floral and refined.",$5.50,House Favourite
+Hot Drinks,English Breakfast Tea,"Classic full-bodied black tea served with your choice of milk.",$3.50,
+Hot Drinks,Earl Grey,"Aromatic black tea with bergamot oil. Delicate, citrus-floral, and timeless.",$3.50,
+Hot Drinks,Chamomile & Honey,"Gentle chamomile blossoms steeped with raw wildflower honey. Soothing and soft.",$3.50,
+Hot Drinks,Turmeric Latte,"Golden turmeric and ginger blended with steamed oat milk and a pinch of black pepper.",$5.50,
+Pastries,Butter Croissant,"Classic laminated French croissant. Shatteringly flaky outside, pillowy soft inside.",$4.00,
+Pastries,Almond Croissant,"Twice-baked butter croissant filled with almond cream and topped with toasted flakes.",$5.50,Popular
+Pastries,Pain au Chocolat,"Buttery laminated pastry wrapped around two batons of rich dark chocolate.",$5.00,House Favourite
+Pastries,Blueberry Muffin,"Moist, fluffy muffin bursting with fresh blueberries and a crunchy sugar top.",$4.50,
+Pastries,Cinnamon Roll,"Hand-rolled dough swirled with brown sugar and cinnamon, topped with cream cheese glaze.",$5.50,Popular
+Pastries,Banana Bread,"Dense, moist loaf made with overripe bananas and a hint of vanilla. Sliced to order.",$4.50,
+Pastries,Chocolate Brownie,"Fudgy, dense dark chocolate brownie with a crackly top. Slightly gooey in the centre.",$5.00,Popular
+Pastries,Lemon Tart,"Buttery shortcrust shell filled with silky lemon curd. Bright, zesty, and elegant.",$5.50,House Favourite
+Pastries,Vanilla Scone,"Classic British scone served with clotted cream and housemade strawberry jam.",$4.00,
+Pastries,Chocolate Eclair,"Choux pastry filled with vanilla custard cream and dipped in dark chocolate glaze.",$5.50,
+Sandwiches,Avocado & Poached Egg Toast,"Smashed avocado on toasted sourdough with a soft poached egg, chilli flakes, and lemon zest.",$11.00,House Favourite
+Sandwiches,Smoked Salmon Bagel,"Toasted sesame bagel with cream cheese, smoked salmon, capers, and red onion.",$13.00,Popular
+Sandwiches,BLT Club,"Toasted brioche stacked with crispy streaky bacon, butter lettuce, and heirloom tomato.",$12.00,
+Sandwiches,Chicken Pesto Panini,"Grilled ciabatta with roasted chicken, basil pesto, sundried tomatoes, and mozzarella.",$13.00,Popular
+Sandwiches,Caprese Ciabatta,"Fresh mozzarella, sliced heirloom tomato, and basil on toasted ciabatta with balsamic glaze.",$11.00,
+Sandwiches,Tuna Melt,"House tuna salad with cheddar on toasted sourdough, grilled until golden and bubbling.",$12.00,
+Sandwiches,Turkey & Brie Croissant,"Roasted turkey and creamy brie with cranberry chutney in a toasted butter croissant.",$13.00,House Favourite
+Sandwiches,Roasted Veggie Wrap,"Herbed cream cheese and seasonal roasted vegetables wrapped in a toasted spinach tortilla.",$11.00,

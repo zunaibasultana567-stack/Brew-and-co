@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import BrandMark from './BrandMark'
-cimport ReservationModal from './ReservationModal'
+import ReservationModal from './ReservationModal'
 
 const NAV_LINKS = [
   { label: 'Home',  href: '/'      },

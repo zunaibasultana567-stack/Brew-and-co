@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Fraunces, Geist, Geist_Mono } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import N8nChat from '@/components/N8nChat'
 import './globals.css'
 
 const geistSans = Geist({
@@ -57,6 +58,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <N8nChat />
       </body>
     </html>
   )
